@@ -1,0 +1,103 @@
+@keyframes vline {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  80%,
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes turn-on-transform {
+  0% {
+    transform: scale(1, 0.6) translate(0, 0) skew(2deg);
+  }
+
+  6% {
+    transform: scale(2) translate(0, -20%) skew(2deg);
+  }
+
+  30% {
+    transform: scale(1) translate(0, -20%) skew(-2deg);
+  }
+
+  50% {
+    transform: scale(1, 0.8) translate(0, 40%) skew(-2deg);
+  }
+
+  100% {
+    transform: scale(1) translate(0, 0) skew(0);
+  }
+}
+
+@keyframes turn-on-filter {
+  0% {
+    filter: brightness(1) invert(1) saturate(1.2);
+  }
+
+  3% {
+    filter: brightness(4) invert(1) saturate(2);
+  }
+
+  15% {
+    filter: brightness(4) invert(0) saturate(2);
+  }
+
+  30%,
+  50% {
+    filter: brightness(10) invert(0) saturate(1);
+  }
+
+  70% {
+    filter: contrast(1) brightness(1) invert(0) saturate(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes go-to-space {
+  from {
+    transform: var(--startTransform);
+  }
+
+  to {
+    transform: var(--endTransform);
+  }
+}
+
+@keyframes exit-space {
+  from {
+    transform: var(--endTransform);
+  }
+
+  to {
+    transform: var(--startTransform);
+  }
+}
+
+@keyframes moving-stars {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,27 +1,24 @@
 /* Your existing CSS code goes here */
 
-/* Additional styles for Products Page */
-.main-content {
-  padding: 2rem;
-}
-
-.product {
+/* Additional styles for Projects Page */
+.project {
   border: 1px solid #ccc;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 
-.product__title {
+.project__title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.product__description {
+.project__description {
   color: #666;
   margin-bottom: 1rem;
 }
 
-.button-text {
+/* Reusing button-text styles for consistency */
+.project .button-text {
   display: inline-block;
   padding: 0.5rem 1rem;
   background-color: #007bff;
@@ -30,6 +27,6 @@
   border-radius: 4px;
 }
 
-.button-text:hover {
+.project .button-text:hover {
   background-color: #0056b3;
 }

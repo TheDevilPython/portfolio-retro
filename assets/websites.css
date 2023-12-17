@@ -1,0 +1,32 @@
+/* Your existing CSS code goes here */
+
+/* Additional styles for Websites Page */
+.website {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.website__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.website__description {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Reusing button-text styles for consistency */
+.website .button-text {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.website .button-text:hover {
+  background-color: #0056b3;
+}
